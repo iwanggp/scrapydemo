@@ -1,0 +1,9 @@
+.pytest_cache/
+.scrapy/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+outputs/
+.DS_Store
