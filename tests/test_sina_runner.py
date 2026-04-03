@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+
 from run_sina_latest_comments import infer_feed_format
 
 

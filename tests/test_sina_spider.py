@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from datetime import date
+
 from universal_scraper.spiders.sina_latest_comments_spider import SinaLatestCommentsSpider
 
 
@@ -103,8 +104,7 @@ class TestNormalizeComments:
 
     def test_missing_fields_return_none(self):
         row = build_spider()._normalize_comments([{}])[0]
-        assert row["content"] is None
-        assert row["agree"] is None
+        assert row["content"] is None and row["agree"] is None
 
     def test_multiple_rows(self):
         rows = [dict(self.SAMPLE_ROW, mid=str(i)) for i in range(5)]

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import pytest
+
 from universal_scraper.spiders.sina_latest_comments_spider import SinaLatestCommentsSpider
 
 
